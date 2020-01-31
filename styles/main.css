@@ -1,0 +1,21 @@
+/*google fonts: PT Serif and Raleway */
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Raleway&display=swap');
+
+:root {
+    /*pallette colors*/
+    --blue-gray: #6291b0;
+  --whitesmoke: #f7f6f2;
+  --bone: #e6d5ca;
+  --prussian-blue: #053c55;
+  --rich-black: #02161f;
+  --gray-blue: #7694a2;
+  --blue-gray-shadow: #486a81;
+
+  /*font choices*/
+  --heading-font: 'Raleway', Helvetica, sans-serif;
+  --paragraph-font: 'PT Serif', Helvetica, sans-serif;
+
+  /*other color choices*/
+  --nav-link: #02161f;
+  --nav-background: 
+}
