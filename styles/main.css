@@ -16,6 +16,84 @@
   --paragraph-font: 'PT Serif', Helvetica, sans-serif;
 
   /*other color choices*/
-  --nav-link: #02161f;
-  --nav-background: 
+  --nav-link: #f7f6f2;
+  --nav-background: #053c55;
+  --nav-hover: ;
+
+
 }
+
+html {
+    background-color: var(--blue-gray);
+}
+
+body {
+    margin: 0 auto;
+    height: 100%;
+    
+}
+
+.header {
+    background-color: var(--prussian-blue);
+    height: 200px;
+}
+
+.header h1 {
+    color: var(--whitesmoke);
+    text-align: center;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.content {
+    min-height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--whitesmoke);
+    font-family: var(--paragraph-font);
+    /*margin-bottom: -40px;*/
+
+}
+
+main {
+    margin: 0 auto;
+}
+
+#topics {
+    padding-top: 20px;
+
+}
+
+#topics h2 {
+    font-family: 'Raleway' /*var(--heading-font);*/;
+    padding-left: 20px;
+}
+
+#topics ul li a {
+    text-decoration: none;
+    text-align: left;
+    font-size: 24px;
+    padding: 10px;
+}
+
+#topics ul li a:hover {
+    background-color: var(--blue-gray-shadow);
+    border-radius: 10px;
+    color: var(--whitesmoke);
+}
+
+#topics ul li {
+    text-align: left;
+    line-height: 35px;
+
+}
+
+#topics ul {
+    list-style-type: none;
+
+}
+
+
+
+
+
