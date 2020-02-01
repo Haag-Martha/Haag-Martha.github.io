@@ -28,8 +28,15 @@ For example:
 <script>
   //create a varialbe and assign values within the square brackets
   var Fruit = ["Apple","Banana","Coconut"];
-  //display the first value of the array
+  //display the values of the array
   document.write(Fruit[0]); 
+  document.write("<br>");
+  document.write(Fruit[1]);
+  document.write(", ");
+  document.write(Fruit[2]);
+  document.write("<br>");
+  document.write("<b>");
+  document.write("A lovely bunch of Coconuts!");
 </script>
 ```
 See it at 
