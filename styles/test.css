@@ -1,0 +1,36 @@
+
+
+
+
+html {
+    background-color: #6291b0;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+h2 {
+    padding: 40px 40px 0px 40px;
+}
+
+.test-box {
+    background-color: #e6d5ca;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.question-block{
+    background-color: whitesmoke;
+    max-width: 400px;
+    margin: 40px;
+    padding: 10px;  
+    border: 2px solid black;
+    box-shadow: 2px 5px #dac1c1;
+  }
+
+  #submit-btn {
+      margin: 0px 40px 40px 40px;
+  }

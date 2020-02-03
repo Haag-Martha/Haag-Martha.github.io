@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>A Simple Test</title>
+        <meta name="description" content="Martha Haag">
+        <link rel="stylesheet" href="styles/test.css">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif|Raleway&display=swap" rel="stylesheet"> 
+        
+    </head>
+
+    <body>
+
+        <div class="test-box">
+
+        <h2>A Simple Test</h2>
+            <div  class="question-block">
+                <label>Question 1: What is 2 x 2?</label>
+                <br/><br/><em>Answer:</em>
+                <input type="number" id="txtQuestion1" />
+            </div>
+
+            <div class="question-block">
+                <label>Question 2: Paraiba is a State in which Country ?</label>
+                <br/><br/><em>Choose One:</em><br/><br/>
+
+                <div>
+                    <input type="radio" value="bolivia" name="question2" id="question2a" />
+                    <label for="question2a">Bolivia</label>
+                </div>
+            
+                <div>
+                    <input type="radio" value="bolivia" name="question2" id="question2b" />
+                    <label for="question2b">Chile</label>
+                </div>
+  
+                <div>
+                    <input type="radio" value="brazil" name="question2" id="question2c" />
+                    <label for="question2c">Brazil</label>
+                </div>  
+            </div>
+            <button id="submit-btn" onclick="checkAnswers()">Submit Answers</button>
+        </div>
+
+        <script src="scripts/simpletest.js"></script>
+        
+    </body>
