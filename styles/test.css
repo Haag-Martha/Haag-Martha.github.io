@@ -1,14 +1,16 @@
-
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Raleway&display=swap');
 
 
 
 html {
     background-color: #6291b0;
+    font-family: "PT Serif", Helvetica, sans-serif;
 }
 
 body {
     margin: 0 auto;
     max-width: 800px;
+    font-family: "PT Serif", Helvetica, sans-serif;
 }
 
 h2 {
@@ -33,4 +35,9 @@ h2 {
 
   #submit-btn {
       margin: 0px 40px 40px 40px;
+  }
+
+  .back {
+      margin: 10px 0px 0px 10px;
+      
   }
