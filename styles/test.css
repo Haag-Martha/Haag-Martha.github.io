@@ -2,14 +2,15 @@
 
 
 
-html {
-    background-color: #6291b0;
+html {    
     font-family: "PT Serif", Helvetica, sans-serif;
+    max-width: 960px;
 }
 
 body {
+    background-color: #6291b0;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 860px;
     font-family: "PT Serif", Helvetica, sans-serif;
 }
 
@@ -22,19 +23,35 @@ h2 {
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
+    box-shadow: 5px 5px #486a81;
 }
 
 .question-block{
+
     background-color: whitesmoke;
     max-width: 400px;
     margin: 40px;
     padding: 10px;  
     border: 2px solid black;
-    box-shadow: 2px 5px #dac1c1;
+    box-shadow: 4px 5px #ccb7b7;
   }
 
   #submit-btn {
       margin: 0px 40px 40px 40px;
+      border: 1px solid black;
+      box-shadow: 4px 5px #ccb7b7;
+      padding: 8px;
+      border-radius: 8px;
+      background-color: #6ea8ce;
+      font-weight: bold;
+      color: whitesmoke;
+      letter-spacing: 1.5px;
+      text-shadow: 
+      -.5px -.5px 0 #000,
+      .5px -.5px 0 #000,
+      -.5px .5px 0 #000,
+      .5px .5px 0 #000;;
+
   }
 
   .back {
