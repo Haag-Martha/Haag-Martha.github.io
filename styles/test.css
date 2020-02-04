@@ -50,9 +50,14 @@ h2 {
       -.5px -.5px 0 #000,
       .5px -.5px 0 #000,
       -.5px .5px 0 #000,
-      .5px .5px 0 #000;;
+      .5px .5px 0 #000;
 
   }
+
+  #submit-btn:hover {
+        background-color: #517c99;
+  }
+  
 
   .back {
       margin: 10px 0px 0px 10px;
