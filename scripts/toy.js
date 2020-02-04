@@ -8,12 +8,3 @@ function createToy(){
     }
     document.getElementById("show-toy").innerHTML = JSON.stringify(toy);
 }
-
-function createPerson(){
-    var person = {
-        hairColor: document.getElementById("hair").value
-        , gender: document.person.gender.value
-    };
-    
-    document.getElementById("Display Person").innerHTML = "Person's hair color: " + person.hairColor;
-}

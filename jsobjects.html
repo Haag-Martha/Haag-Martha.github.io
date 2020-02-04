@@ -56,7 +56,21 @@
         </div>
 
         <div class="text-2">
-            <p>There you go, a JavaScript Object.  Nothing fancy, but you can see that it has multiple values and parameters. The possibilities are endless. </p>
+            <p>There you go, a JavaScript Object.  Nothing fancy, but you can see that it has multiple values and parameters. The possibilities are endless. Here is the JavaScript for the above form:</p>
+            <pre>
+                function createToy(){
+                    var toy = new Object();
+                    toy.color = document.myForm.color.value;
+                    toy.size  = document.getElementById("size").value;
+                    toy.isFuzzy = document.getElementById("softness").value;
+                    toy.play = function(){
+                        this.status = "playing";
+                    }
+                    document.getElementById("show-toy").innerHTML = JSON.stringify(toy);
+                }
+                
+                
+            </pre>
         </div>
 
     

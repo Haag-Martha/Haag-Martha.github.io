@@ -95,6 +95,12 @@ input[type=text], select {
     cursor: pointer;
 }
 
+pre {
+    background-color: whitesmoke;
+    float: left;
+    text-align: left;
+}
+
 
 
 
