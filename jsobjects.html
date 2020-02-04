@@ -15,6 +15,9 @@
         <div class="content">
     <header>
         <h1>JavaScript Objects</h1>
+        <div class="back">
+            Back to <a href="index.html">Main </a>Page
+        </div>
     </header>
 
     <main>
@@ -23,33 +26,37 @@
         <div class="text">
             <h2>Concepts: Object Creation, Functions, Inheritance, Properties, Methods, Instantiation</h2>
 
-        <p id="para-1">Object Oriented Programming (OOP) refers to the use of objects in programing.  JavaScript is not actually an object-oriented language but it uses
+        <p>Object Oriented Programming (OOP) refers to the use of objects in programing.  JavaScript is not actually an object-oriented language but it uses
             objects and assigns properties and values to them.  The use of ojects allows you to create modules that don't need to be changed every time a new type of object is added. I can just create a new object that inherits features from other existing objects saving time and improving organization.  I find it easier to keep track of everything when it's all in these bite-sized pieces, it's easier for my mind to process.            
         </p>
-        <br>
-        <p id="par-2">
+        
+        <p>
             Objects are variables but variables that can contain multiple values and properties.  Basically, "JavaScript objects are containers for <b>named values</b> called properties or methods." <a href="https://www.w3schools.com/js/js_objects.asp">(w3schools.com)</a>
         </p>
-        <br>
-        <p id="para-3">
-            In my little snippet of code here, I create a simple Object, let's say a toy where I let the user specify the color, size, and texture of said toy.
+        
+        <p>
+            In my little snippet of code here, I create a simple Object, let's say-a toy-where I let the user specify the color, size, and texture of the toy.
         </p>
         </div>
         <div id="toy">
             <h2>JavaScript Object: Create a toy!</h2>
             <p id="show-toy"></p>
             <form name="myForm">
-                <label>Choose a Color:</label>
+                <label>Choose a Color:</label><br>
                 <input type="text" id="color" name="color" placeholder="Blue"/><br>
-                <label>Choose a Size:</label>
+                <label>Choose a Size:</label><br>
                 <input type="text" id="size" name="size" placeholder="Small"/><br>
-                <label>Is it fuzzy?</label>
+                <label>Is it fuzzy?</label><br>
                 <select id="softness">
                     <option value="true">Yes</option>
                     <option value="false">No</option>
                 </select><br>
                 <button id="button" type="button" value="submit" onclick="createToy()">Create Object</button>
             </form>
+        </div>
+
+        <div class="text-2">
+            <p>There you go, a JavaScript Object.  Nothing fancy, but you can see that it has multiple values and parameters. The possibilities are endless. </p>
         </div>
 
     

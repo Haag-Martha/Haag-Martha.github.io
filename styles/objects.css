@@ -31,6 +31,8 @@ h1 {
 
 }
 
+
+
 .content {
     /*max-width: 600px;*/
     margin: 20px;
@@ -38,18 +40,22 @@ h1 {
 }
 
 h2 {
-    padding: 40px 40px 0px 40px;
+    padding: 10px;
 
 }
 
-.text {
+.text, .text-2 {
     background-color: whitesmoke;
     margin: 20px;
     padding: 30px;
 }
 
+.text-2 p {
+    font-size: 20px;
+}
+
 .text p {
-    font-size: 26px;
+    font-size: 20px;
 }
 
 #toy {
@@ -64,12 +70,29 @@ input[type=text], select {
     border-radius: 4px;
 }
 
-input[type=button] {
+#toy form {
+    margin: 10px;
+    padding: 10px;
+}
+
+#button {
     color: whitesmoke;
+    font-weight: bold;
     background-color: #7694a2;
     padding: 14px 20px;
     margin: 8px 0;
-    border: 1px #02161f;
+    border: 2px #02161f;
+    border-radius: 4px;
+    text-shadow: 
+    -.5px -.5px 0 #000,
+    .5px -.5px 0 #000,
+    -.5px .5px 0 #000,
+    .5px .5px 0 #000;
+}
+
+#button:hover {
+    background-color: #495e68;
+    cursor: pointer;
 }
 
 
