@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Local Storage</title>
+        <meta name="description" content="Local Storage Fluency">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/local.css">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif|Raleway&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        
+            <header class="header">
+                <h1>Fluency Topic: Local Storage</h1>
+            </header>
+
+            <div class="content">
+            <nav></nav>
+
+            <main>
+                <div class="para1">
+                    <h2>What I have learned about Local Storage:</h2>
+                    <p>Before we had local storage functionality from JavaScript, the only way to store information on the client browser was with cookies.  Cookies had a very limited size of
+                    4093 bytes per domain, so we couldn't store much.  Now we can use local storage to store objects, data and arrays in the browser.  With Chrome that can be up to 5mb.
+                    </p>
+                    <p>To save objects in local storage we cast the JavaScript object into a JSON string using the JSON.stringify function.  Then we can turn the string back into an object with the JSON parse function.</p>
+                </div>
+                <div class="code">
+                    <p>//example of a JSON.parse function</p>
+                    <p>var jsonString = '{ "name":"Martha", "profession":"Student", "age":43}';</p>
+                    <p>var jsonObject = JSON.parse(jsonString);</p> 
+                    <p> document.write("Hi, my name is " + jsonObject.name + ".");</p>   
+                    <p>document.write("I am " + jsonObject.age + "years old, and I'm a " + jsonObject.profession + ".");</p>
+                </div>
+
+               <div class="show">
+                <span id="result">The result: </span><br>
+                <script>
+                    var jsonString = '{ "name":"Martha", "profession":"Student", "age":43}';
+                    var jsonObject = JSON.parse(jsonString);
+                    document.write("Hi, my name is " + jsonObject.name + ". <br/>");
+                    document.write("I am " + jsonObject.age + " years old, and I'm a " + jsonObject.profession + "."); 
+                  </script>
+               </div>
+
+               <div class="list-intro">
+                   <p>Following is a small application that creates objects and adds them to a list, storing the information within the brower.</p>
+               </div>
+
+
+
+               <div class="list">
+                
+                <label>Things to do: </label><input id="txtTodo" type="text"><button onclick="addItem()">Add</button>
+                <br/>
+                <br/>
+                
+              <strong>List of things to do: </strong>
+              
+              <ol id="myList">
+              </ol>
+                  <p>(Click on item to remove from list)</p>
+                  
+              </div>
+
+
+               <div class="examples">
+                   <p>Here are several examples of JavaScript functions that create and save strings, arrays and objects to local storage.</p>
+                    <img src="images/localstorage.PNG" alt="code on black background">
+               </div>
+
+               <div class="back">
+                Back to <a href="index.html">Main </a>Page
+            </div>
+
+            
+                
+                    
+            </main>
+            <div class="push"></div>
+        </div> <!--end content div -->
+
+        <script src="scripts/local.js"></script>  
+            
+        <footer class="footer">
+                <p>&copy;2020, Martha Haag</p>
+            </footer>
+    </body>
+</html>
