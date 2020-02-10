@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=PT+Serif|Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|PT+Serif&display=swap');
 
 
 
@@ -95,10 +95,11 @@ input[type=text], select {
     cursor: pointer;
 }
 
-pre {
+.script {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px !Important;
     background-color: whitesmoke;
-    float: left;
-    text-align: left;
+
 }
 
 
