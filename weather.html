@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Martha Haag CIT 261 Fluency - JSON</title>
+        <meta name="description" content="Martha Haag JSON">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/weather.css">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif|Raleway&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        
+            <header class="header">
+                <h1>The weather in my hometown</h1>
+            </header>
+
+            <div class="content">
+            <nav></nav>
+
+            <main>
+                <div class="currentconditions">
+                    <p>Current Weather</p>    
+                    <img src="#" id="weathericon" alt="current weather icon">
+                    <p> <span id="weather-desc"></span></p></div>
+                
+                
+                <div class="rightnow">
+                    <p>Today's Weather</p>
+                    <ul> 
+                        <li>Currently: <span id="currenttemp"></span>&deg;F</li>
+                        <li>Precipitation: <span id="precip"></span> in</li>
+                        <li>Humidity: <span id="humidity"></span>%</li>
+                        <li>Wind Speed: <span id="currentspeed"></span>mph</li>
+                        <li>Wind Chill: <span id="windchill"></span>&deg;F</li>  
+                    </ul>
+                </div>
+
+                <div id="forecast">
+                    <h3>High Temperature Forecast</h3>
+                    <div id="forecast-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tues</th>
+                                <th>Wed</th>
+                                <th>Thurs</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                
+                                <td><span id="sun"></span></td>
+                                <td><span id="mon"></span></td>
+                                <td><span id="tues"></span></td>
+                                <td><span id="wed"></span></td>
+                                <td><span id="thurs"></span></td>
+                                <td><span id="fri"></span></td>
+                                <td><span id="sat"></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+
+                <div id='attribution'>Weather information provided by: <a href="https://openweathermap.org">openweathermap.org</a></div>
+
+                <div class="codepen">
+                    <p>To see all the code behind this, visit my <a href="https://codepen.io/mintnerknown/pen/LYVppLB" target="_blank">JSON Weather</a> at CodePen.</p>
+
+                </div>
+            </main>
+            <div class="push"></div>
+        </div> <!--end content div -->
+
+        <script src="scripts/weather.js"></script>
+            
+        <footer class="footer">
+                <p>&copy;2020, Martha Haag</p>
+            </footer>
+    </body>
+</html>

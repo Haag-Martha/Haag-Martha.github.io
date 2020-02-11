@@ -1,0 +1,157 @@
+/*google fonts: PT Serif and Raleway */
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Raleway&display=swap');
+
+html {
+    background-color: #6291b0;
+}
+
+body {
+    margin: 0 auto;
+    height: 100%;    
+}
+
+.header {
+    background-color: #053c55;
+    height: 200px;
+}
+
+.header h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    padding-top: 5%;
+    font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+.content {
+    min-height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f7f6f2;
+    font-family: 'PT Serif', Helvetica, sans-serif;
+}
+
+main {
+    margin: 0 auto;
+}
+
+.currentconditions {
+    text-align: center;
+    margin: 20px;
+    width: 250px;
+    color: whitesmoke;
+    align-self: center;
+    font-weight: bold;
+    background-color: #475552;
+    font-size: .9rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px -3px rgba(9, 9, 9, 0.58);
+    margin-left: 10px;
+    padding: 10px 0 10px 0;
+}
+    
+#weathericon {
+    width: 100px;
+    align-self: center;
+}
+    
+.currentconditions p{
+    text-align: center;
+    margin: 0;
+    letter-spacing: .7px;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+.currentconditions #weathericon {
+    display: inline-block;
+}
+
+.currentconditions span {
+    font-size: .9rem;
+    text-transform: capitalize;
+}
+
+.rightnow {
+    margin: 20px;    
+    width: 250px;
+    color: whitesmoke;
+    background-color:  rgba(92, 111, 104);
+    font-size: large;
+    overflow: hidden;
+    padding: 1px 2% 1px 1px;
+    box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+}
+        
+.rightnow ul {
+    line-height: 1.5rem;
+    margin: 2px 0 15px 2px
+}
+        
+.rightnow p {
+    margin: 5px;
+    padding: 10px 0 3px 10px;
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+
+#forecast {
+    display: grid;
+    padding-bottom: 30px;
+}
+    
+table {
+    border-collapse: collapse;
+    width: auto;
+    box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, 0.58)
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(135, 177, 177, 0.39);
+    color: black;
+}
+
+th {
+    height: auto;
+    background-color: rgba(135, 177, 177, 0.8);
+}    
+
+td {
+    background-color: rgba(135, 177, 177, 0.2);
+    padding: 1rem;
+}
+    
+#forecast-table {
+    padding-left: 15px;
+}
+
+#forecast h3 {
+    padding-left: 25px;
+    margin: 10px 0 10px 25px;
+    color: #1f1d1d;
+}
+
+div#attribution {
+    width: 600px;
+    text-align: center;
+    font-size: 1rem;
+    margin: 0;   
+    background-color: #8aa39b;
+    padding-bottom: 5px;
+} 
+
+.footer {
+    text-align: center;
+    background-color: #053c55;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 960px;
+    padding: 5px;
+    margin: 0 auto;
+}
