@@ -3,9 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <title>A toy is an object</title>
+        <title>JSON Fluency</title>
         <meta name="description" content="Martha Haag">
-        <link rel="stylesheet" href="styles/objects.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/json.css">
         <link href="styles/normalize.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Serif|Raleway&display=swap" rel="stylesheet"> 
         
@@ -14,14 +15,49 @@
     <body>
         
         <header class="header">
-
+            <h1>JSON</h1>
         </header>
 
         <div class="content">
         <nav></nav>
 
         <main>
-           
+            <div class="parse">
+                <p>JSON exists in a string.  It's format is like a JavaScript Object--it supports the same data types, like arrays, booleans, numbers--and of course--strings.  Unlike JavaScript however, JSON contains only data types, no methods.  Since JSON can contain huge amounts of data, unreadable by humans, we use JavaScript to make sense of it.</p>
+                <p>In my example, I use <a href="https://openweathermap.org">openweathermap.org</a> to provide weather information which I call with JavaScript and display on a <a href="weather.html">Weather Forecast</a> page.  But first, I want to talk about JSON parse and stringify.  The JSON data is already in a string and I need to parse it in order to make sense of it.  Here are a couple of examples of JSON.parse and JSON.stringify:</p>
+                <p>With <span class="code">JSON.parse</span> you can convert JSON strings into JS Objects.  In this example the variable <span class="code">jsonString</span> creates a string which the variable <span class="code">jsonObject</span> converts into an object with <span class="code">JSON.parse</span>. Look at this code:</p>
+                <p><img src="images/jsonparse.PNG" alt="colorful code snippet"></p>
+                
+                <div class="result">
+                <h3>Here is the result:</h3>
+                <script>
+                    var jsonString = '{ "name":"Martha", "profession":"student", "age":43}';
+                    var jsonObject = JSON.parse(jsonString);
+                    document.write("Hi, my name is " + jsonObject.name + ". <br/>");
+                    document.write("I am " + jsonObject.age + " years old, and I'm a " + jsonObject.profession + "."); 
+                </script>
+                </div>
+            </div>
+            <div class="string">
+                <p>The <span class="code">JSON.stringify</span> function takes and objects values and casts them into a JSON string.  It's the inverse of the <span class="code">JSON.parse</span> function seen above.  Check out this snippet here:</p>
+                <p><img src="images/jsonstringify.png" alt="colorful snippet of code"></p>
+                <div class="result">
+                <h3>Here is the result:</h3>
+                <script>  
+                    var userObject = {name: 'Martha', profession: 'student', age: 43};
+                    var jsonString = JSON.stringify(userObject);
+                    document.write(jsonString);
+                </script>
+                </div>
+            </div>
+            <div class="weather">
+                <p>Visit the <a href="weather.html"> Weather Forecast </a>page to see JSON in action.  Visit my <a href="https://codepen.io/mintnerknown/pen/LYVppLB" target="_blank">JSON Weather</a> at CodePen to see all the code behind the html.</p></p>
+            </div>
+
+        
+            <div class="back">
+                Back to <a href="index.html">Main </a>Page
+            </div>
         </main>
         <div class="push"></div>
     </div> <!--end content div -->

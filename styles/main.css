@@ -56,8 +56,9 @@ body {
     min-height: 100vh;
     max-width: 900px;
     margin: 0 auto;
+    padding: 20px;
     background-color: var(--whitesmoke);
-    font-family: var(--paragraph-font);
+    font-family: 'PT Serif', Helvetica, sans-serif;
 }
 
 main {
@@ -105,3 +106,13 @@ main {
     border: 2px solid black;
     box-shadow: 2px 5px #888888;
   }
+
+  .footer {
+    text-align: center;
+    background-color: #053c55;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 960px;
+    padding: 5px;
+    margin: 0 auto;
+}
