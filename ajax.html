@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>AJAX Fluency</title>
+        <meta name="description" content="Martha Haag CIT 261 site">
+        <link rel="stylesheet" href="styles/main.css">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif|Raleway&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        
+            <header class="header">
+                <h1>AJAX Fluency</h1>
+            </header>
+
+            <div class="content">
+            <nav></nav>
+
+            <main>
+                <div class="back">
+                    Back to <a href="index.html">Main </a>Page
+                </div>
+                <div class="ajax">
+                    <h2>AJAX - Requesting a JSON file</h2>
+                    <p>AJAX stands for <strong>A</strong>synchronous <strong>J</strong>avaScript <srong>A</srong>nd <strong>X</strong>ML.  It's used to request data from a server and recieve that data and send data <i>to</i> a server <i>without reloading the page.</i> It uses the <span class="code">XMLHttpRequest</span> object to get or send HTTP responses within a page.</p>
+                    <p>First we create an instance, then define a callback function to an event listener "<span class="code">onreadystatechange</span>." When something changes after making a connection to the server with the <span class="code">xhttp.open</span> method, the data is returned in JSON format.</p>
+                    <p>In this example, I use 'GET' to make a call to an URL (<a href="https://api.bitcointrade.com.br/v2/public/BRLBTC/ticker" target="_blank">www.api.bitcointrade.com</a>) and the content is returned as a JSON string.</p>
+                    <p><img src="images/ajax.png" alt="colorful code snippet"></p>              
+                </div>
+
+                <div class="result">
+                    <h3>The Result:</h3>
+                    <img src="images/ajax-result.PNG" alt="a string of data">
+                    <p>See the result of the above code <a href="https://codepen.io/mintnerknown/pen/MWwaymN" target="_blank">here</a> at CodePen</p>
+                    <p>See it in person at <a href="https://api.bitcointrade.com.br/v2/public/BRLBTC/ticker" target="_blank">https://api.bitcointrade.com.br/v2/public/BRLBTC/ticker</a></p>        
+                </div>
+
+                <div class="back">
+                    Back to <a href="index.html">Main </a>Page
+                </div>
+  
+            </main>
+            <div class="push"></div>
+    </div> <!--end content div -->
+            
+        <footer class="footer">
+                <p>&copy;2020, Martha Haag</p>
+            </footer>
+    </body>
+</html>
