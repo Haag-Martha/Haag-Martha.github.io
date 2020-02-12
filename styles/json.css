@@ -10,8 +10,9 @@ span.code {
 
 }
 
-.parse {
-    
+.parse, .string {
+    width: 90%;
+    padding: 20px;
 }
 
 .parse img {
