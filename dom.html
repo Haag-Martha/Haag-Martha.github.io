@@ -23,16 +23,124 @@
             </div>
             </nav>
 
-            <div class="back">
-                Back to <a href="index.html">Main </a>Page
-            </div>
+
             <main>
                 <h2>What about DOM?</h2>
-                <p> DOM (<stong>D</stong>ocument <strong>O</strong>bject <stron>M</stron>odel)</p>
+                <p> DOM (<strong>D</strong>ocument <strong>O</strong>bject <strong>M</strong>odel) "in the simplest terms, in the most convenient definitions" defines elements in HTML as objects with properties, methods and events.  JavaScript can then add or change HTML elements, attributes and CSS styles. The HTML DOM tree of objects is arranged in a virtual tree by elements and attributes and identified for the JavaScript by id, tags, classes, CSS selectors and HTML object collections.
+                Let's look at some of the ways: </p>
+
+                <section>
+                   <h2>Using JavaScript to get an element by id: "getElementById()"</h2> 
+                    <p>If I create a button and give it an "id" of "goButton" like this:</p>
+                    <p class="code">&lt;input type="button" value="Go" id="goButton" onclick="changeGoButton()"&gt;</p>
+                    <p>Then create the JavaScript like this:</p>
+                    <pre>
+                        &lt;script type="text/javascript"&gt;
+                            function changeGoButton(){
+                                if (document.getElementById("goButton").value == "Go")
+                                    document.getElementById("goButton").value = "Stop";
+                                else
+                                    document.getElementById("goButton").value = "Go";
+                            }
+                        &lt;&sol;script&gt;
+                                    </pre>  
+                </section>
+                    <h2>The result:</h2>
+                    <p>Every time you click it, the JavaScript changes the value between Stop and Go</p>
+                    <input type="button" value="Go" id="goButton" onclick="changeGoButton()"/><br>
+                    <p>Just like with the "id" you can specify to your JavaScript what element to target using "name" or "class."  You can also use JavaScript to change the css. </p>
+
+                <section>
+                    <h2>In this section I'll show how you can use JavaScript to affect the appearance of a page by targeting the CSS</h2>
+                    <h3>Hover your mouse over the squares to see what happens</h3>
+                    <div>
+                        <table style="width:300px; height: 100px;">
+                            <tr>
+                                <td id="purple" onmouseover="changeBackground(this.id, '#5dade2')" 
+                                    onmouseout="changeBackground(this.id, '#7d3c98')"
+                                    style="background-color:  #7d3c98;">
+                                </td>
+                                <td id="red" onmouseover="changeBackground(this.id, '#cb4335')" 
+                                    onmouseout="changeBackground(this.id, '#f1c40f')"
+                                    style="background-color:  #cb4335;">
+                                </td>
+                                <td id="green" onmouseover="changeBackground(this.id, '#d35400')" 
+                                    onmouseout="changeBackground(this.id, '#27ae60')"
+                                    style="background-color:  #27ae60;">
+                                </td>
+                            </tr>
+                        </table>
+
+                        <p>Here's the code behind the colors:</p>
+                        <tr>
+                                <td id="purple" onmouseover="changeBackground(this.id, '#5dade2')" 
+                                    onmouseout="changeBackground(this.id, '#7d3c98')"
+                                    style="background-color:  #7d3c98;">
+                                </td>
+                                <td id="red" onmouseover="changeBackground(this.id, '#cb4335')" 
+                                    onmouseout="changeBackground(this.id, '#f1c40f')"
+                                    style="background-color:  #cb4335;">
+                                </td>
+                                <td id="green" onmouseover="changeBackground(this.id, '#d35400')" 
+                                    onmouseout="changeBackground(this.id, '#27ae60')"
+                                    style="background-color:  #27ae60;">
+                                </td>
+                            </tr>
+                        </table>
+                    <pre>
+                        &lt;table style="width:300px;height:100px"&gt;
+                            &lt;tr&gt;
+                                &lt;td id="purple" onmouseover="changeBackground(this.id, '#5dade2')" 
+                                onmouseout="changeBackground(this.id, '#7d3c98')"
+                                style="background-color:  #7d3c98;"&gt;
+                                &lt;/td&gt;
+                                &lt;td id="red" onmouseover="changeBackground(this.id, '#cb4335')" 
+                                onmouseout="changeBackground(this.id, '#f1c40f')"
+                                style="background-color:  #cb4335;"&gt;
+                                &lt;/td&gt;
+                                &lt;td id="green" onmouseover="changeBackground(this.id, '#d35400')" 
+                                onmouseout="changeBackground(this.id, '#27ae60')"
+                                style="background-color:  #27ae60;"&gt;
+                                &lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/table&gt;
+                    </pre>
+
+                    <p>The JavaScript to change the colors</p>
+                    <pre>
+                        function changeBackground(id, color) {
+                            document.getElementById(id).style.background = color;
+                        }
+                    </pre>
+
+                    <h2>And for my final demonstration...</h2>
+                    <h3>Creating, adding and removing elements</h3>
+                    <div class="list">
+                
+                        <label>Things to do: </label><input id="txtTodo" type="text"><button onclick="addItem()">Add</button>
+                        <br/>
+                        <br/>
+                        
+                      <strong>List of things to do: </strong>
+                      
+                      <ol id="myList">
+                      </ol>
+                          <p>(Click on item to remove from list)</p>
+                          
+                      </div>
+                      <p>Here we create items, add them to the page, and then we can remove items from the page, all with JavaScript.</p>
+
+                    </div>
+
+                </section>
+
+                <div class="back">
+                    Back to <a href="index.html">Main </a>Page
+                </div>
             </main>
             <div class="push"></div>
         </div> <!--end content div -->
-            
+            <script src="scripts/dom.js"></script>
         <footer class="footer">
                 <p>&copy;2020, Martha Haag</p>
             </footer>

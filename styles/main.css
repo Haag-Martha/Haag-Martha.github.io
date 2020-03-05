@@ -121,7 +121,6 @@ span.code {
     font-family: monospace !Important;
     font-size: 18px;
     background-color: #dfdfdf;
-
 }
 
 .ajax {
@@ -145,4 +144,37 @@ span.code {
 
 .result img {
     width: 95%;
+}
+
+/*----------------------DOM-----------------*/
+.code {
+    font-family: monospace !Important;
+    font-size: 16px;
+    background-color: #dfdfdf;
+    padding: 2px;
+}
+
+pre {
+    background-color: #dfdfdf;
+    padding: 2px;
+}
+
+#goButton {
+    background-color: #7694a2;
+    color: whitesmoke;
+    width: 80px;
+    padding: 10px;
+    border: .5px solid #053c55;
+    font-weight: bold;
+    text-shadow: 
+    -.5px -.5px 0 #00070c,
+    .5px -.5px 0 #00070c,
+    -.5px .5px 0 #00070c,
+    .5px .5px 0 #00070c;
+    border-radius: 4px;
+    letter-spacing: 1px;
+}
+
+.dom-color {
+    background-color: yellowgreen;
 }
