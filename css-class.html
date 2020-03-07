@@ -20,12 +20,51 @@
             <div class="content">
             <nav></nav>
 
-            <main>
-               
+        <main>
+                <p>We've established that objects and elements in the DOM structure of an html page can be manipulated using JavaScript. As the title implies JavaScript can also change CSS class properties, behavior and style. The objects and/or elements are identified in JavaScript by "getElementById" or "getElementByClassName" and then changes can be applied.</p>
+                
+                <p>There's a JavaScript function "toggleClass" that allows you to "toggle" between css styles by using class names and element ids.  This next widget demonstrates this toggle effect.
+                </p>
+                
+            <div id="css-widget">
+                <div id="toggle-js" class="">
+                    <h2>Clicking the buttons will change the apearance of this sentence.</h2>
+                </div>
+                
+                <div>
+                    <button class="button-css" onclick="toggleClass('css-border')">Change Border</button>
+                    <button class="button-css" onclick="toggleClass('css-font')">Change Font</button>
+                    <button class="button-css" onclick="toggleClass('css-color')">Change Color</button>
+                </div>                    
+            </div>
+
+            <div class="hide">
+                <p>We can further affect the CSS of the above widget using JavaScript.  Click the buttons below to make it disapear.</p>
+                <button class="button-css" onclick="hideMe()">Hide</button>
+                <button class="button-css" onclick="showMe()">Unhide</button>
+            </div>
+ 
+            <div class="mouse">
+                <h4>In this example we use a JavaScript function to change the text and appearance of the following object.</h4>
+                <div class="mouse-over" onmouseover="mouseOver(this)" onmouseout="mouseOut(this)">Hover the mouse over me!</div> 
+            </div>
+
+            <div class="toggle-code">
+                <h3>Here's all the code behind the previous examples:</h3>
+                <h4>The HTML:</h4>
+                <img id="html-img" src="images/css-toggle-html.PNG" alt="html code">
+                <h4>The CSS:</h4>
+                <img class="css-img" src="images/css-toggle-css-1.PNG" alt="css code">
+                <img class="css-img" src="images/css-toggle-css-2.PNG" alt="css code">
+                <h4>The JavaScript</h4>
+                <img id="js-img" src="images/css-toggle-js.PNG" alt="JavaScript code">
+            </div>
+            
             </main>
             <div class="push"></div>
         </div> <!--end content div -->
-            
+        
+        <script src="scripts/toggle.js"></script>    
         <footer class="footer">
                 <p>&copy;2020, Martha Haag</p>
             </footer>
