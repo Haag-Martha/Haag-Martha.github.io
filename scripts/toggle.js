@@ -23,7 +23,7 @@ function mouseOver(obj) {
 }
 
 function mouseOut(obj) {
-    obj.innerHTML = "Hover your mouse over me?"
+    obj.innerHTML = "Do it again?"
     obj.style.width = "150px";
     obj.style.height = "50px";
     obj.style.backgroundColor = "#e6d5ca";

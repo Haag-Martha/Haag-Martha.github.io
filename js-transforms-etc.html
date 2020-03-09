@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>CSS transitions, transforms, animations by JavaScript</title>
+        <meta name="description" content="Martha Haag CIT261 site">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/by-js.css">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif|Raleway&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        
+            <header class="header">
+                <h1>CSS Transitions, animations, and transforms by JavaScript</h1>
+                <p>Back to <a href="index.html">Main</a> Page</p>
+            </header>
+
+            <div class="content">
+            <nav></nav>
+
+            <main>
+                <div class="animation-1">
+                    <h2>Triggering transformation and animation with JavaScript</h2>
+                    <h4>Click
+                    <button onclick="changeAnim()" style="margin:10px">Here</button> to trigger an animation change.</h4>
+                    <br />
+                    <div class="animation">
+                        <div id="obj1" class="anim1">I'm Transforming!</div>          
+                    </div>
+                </div>
+
+                <div class="background">
+	                <h3>onMouseOver and onMouseOut</h3>
+	                <div id="square" onmouseover="myFunction2('square', '200px', '200px', 'aquamarine')" onmouseout="myFunction2('square', '100px', '100px', 'pink')"></div>
+                </div>
+
+                <div>
+                    <h3>Spin using transition property</h3>
+                     <img id="load-img" src="https://i.imgur.com/waLi4w3.jpg" />
+                  <br>
+                    <br>
+                    <br>
+                    <br>
+                  <button onclick="TurnOn();">Turn ON</button>
+                  <button onclick="TurnOff();">Turn OFF</button>
+                  </div>
+                  
+            </main>
+            <div class="push"></div>
+            <script src="scripts/by-js.js"></script>
+        </div> <!--end content div -->
+        <p>Back to <a href="index.html">Main</a> Page</p>   
+        <footer class="footer">
+                <p>&copy;2020, Martha Haag</p>
+            </footer>
+    </body>
+</html>
