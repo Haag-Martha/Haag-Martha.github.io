@@ -62,7 +62,7 @@ h1 {
     color: white !Important;  
   }
   
-  /* Print */
+  /* boring */
   body.boring h1 {
     text-shadow: none;
     color: black;
@@ -83,4 +83,30 @@ h1 {
 
   body.boring label {
     font-family: "Courier New", Courier, monospace;  
+  }
+
+  /*the mouse over*/
+
+  .events {
+      background-color: whitesmoke;
+      color: black;
+      padding: 24px;
+      margin-top: 25px;
+  }
+  #event-p {
+      color: black !Important;
+  }
+
+  #js-button { 
+    width: 190px; 
+    height: 190px; 
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border: none;    
+  } 
+
+  .the-code {
+      background-color: whitesmoke;
+      padding: 25px;
   }

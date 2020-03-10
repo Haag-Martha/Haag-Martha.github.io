@@ -39,3 +39,15 @@ function addEvent(obj, type, fn) {
       }
     }
   }
+
+  function clickme(self, event) {
+    self.innerHTML = "Clicked";
+  }
+  
+  function mousemove(self, event) {
+    self.innerHTML = event.clientX + ", "+event.clientY;
+  }
+  
+  function keypress(self, event) {
+    self.innerHTML = event.keyCode+" is pressed";
+  }

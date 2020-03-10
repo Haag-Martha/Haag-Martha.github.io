@@ -25,7 +25,7 @@
 
                     <img src="https://i.imgur.com/wYTCtRu.jpg" />
 
-                    <p>A JavaScript Event is something a browser or user does.  A browser event would be like when the page has finished loading.  A user generated event would be if an input field was changed or a button was clicked or the mouse moved over something.  Then the JavaScript  comes into play.</p>
+                    <p>A JavaScript Event is something that happens after a browser or user performs an action.  A browser event would be like when the page has finished loading.  A user generated event would be if an input field was changed or a button was clicked or the mouse moved over something.  Then the JavaScript  comes into play.</p>
                     <p>A Button for instance can have an "onclick" atribute that usually points to some JavaScript code that will do something when the button is clicked.</p>
                     <p>There are several common HTML Events like:
                         <ul>
@@ -38,13 +38,172 @@
                         </ul>
                     </p>
                     <br>
-                    
+                    <h3>This drop down box will trigger JavaScript to change the appearance of the page</h3>
+
                     <label for="styleSwitcher">Choose a style: </label>
                     <select id="styleSwitcher">
                         <option value="normal">Normal</option>
                         <option value="high-contrast">High Contrast</option>
                         <option value="boring">Boring</option>
                     </select>
+
+                <br>
+                <div class="events">
+                    <h2>Hover your mouse over the box and move it around.</h2>
+                    <p id="event-p">The JavaScript function "mousemove" shows the user the x,y values of the mouse location within the box.</p>
+                        <button id="js-button" onclick="clickme(this, event)" onmousemove="mousemove(this, event)" onkeyup="keypress(this, event)" autofocus>Click Me</button>
+                    <h3>Then try clicking in the box...the JavaScript function "clickme" gives a message "clicked" when you (the user) click inside the box.</h3>
+                    <h3>Finally, press a key (or various keys) on the keyboard.  The JavaScript function "keypress" shows the keycode of the key you press.</h3>
+                </div>
+                <hr>
+                <div class="the-code">
+                    <h2>The code -</h2>
+                    <h3>For the Style select box:</h3>
+                    <pre>
+                        HTML:
+                        &lt;label for="styleSwitcher"&gt;Choose a style: &lt;/label>
+                        &lt;select id="styleSwitcher">
+                        &lt;option value="normal">Normal&lt;/option>
+                        &lt;option value="high-contrast">High Contrast&lt;/option>
+                        &lt;option value="boring">Boring&lt;/option>
+                        &lt;/select>
+                        
+                        The CSS:
+                        label {
+                            font-size: 20px;
+                            font-family: Arial, Helvetica, sans-serif;  
+                        }                        
+                        /* Normal styles */
+                        h1 {
+                            text-shadow: -.8px -.8px 0 #00070c,
+                              .8px -.8px 0 #00070c,
+                              -.8px .8px 0 #00070c,
+                              .8px .8px 0 #00070c;
+                            color: white;
+                            letter-spacing: .5px;
+                            font-size: 36px;
+                          }                          
+                          img {
+                            float: right;
+                            width: 250px;
+                            padding-left: 20px;
+                          }                          
+                          body.normal p {
+                            font-size: 20px;
+                            font-family: Arial, Helvetica, sans-serif;
+                          }                          
+                          body.normal ul li {
+                            font-size: 20px;
+                            font-family: 'Arial', Helvetica, sans-serif;
+                          }                          
+                          /* High contrast */
+                          body.high-contrast {
+                            background-color: DarkBlue;
+                            color: white !Important;
+                          }
+                          body.high-contrast p {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 20px;
+                            color: white !Important;
+                          }
+                          body.high-contrast ul li {
+                             font-family: Arial, Helvetica, sans-serif;
+                            font-size: 20px;
+                            color: white !Important;
+                          }                          
+                          body.high-contrast h1 {
+                            text-shadow: none;
+                          }                        
+                          body.high-contrast label {
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 20px;
+                            color: white !Important;  
+                          }                          
+                          /* boring */
+                          body.boring h1 {
+                            text-shadow: none;
+                            color: black;
+                            font-family: "Courier New", Courier, monospace;
+                          }                        
+                          body.boring {
+                            background-color: whitesmoke !Important;
+                          }                          
+                          body.boring p, ul li {
+                            font-family: "Courier New", Courier, monospace;
+                          }                          
+                          body.boring img {
+                            display: none;
+                          }                        
+                          body.boring label {
+                            font-family: "Courier New", Courier, monospace;  
+                          }
+
+                        The JavaScript:
+                        function addEvent(obj, type, fn) {
+                            if (obj.attachEvent) {
+                              obj['e' + type + fn] = fn;
+                              obj[type + fn] = function() {
+                                obj['e' + type + fn](window.event);
+                              }
+                              obj.attachEvent('on' + type, obj[type + fn]);
+                            } else obj.addEventListener(type, fn, false);
+                          }                          
+                          function trigger(action, el) {
+                            if (document.createEvent) {
+                              var event = document.createEvent('HTMLEvents');
+                              event.initEvent(action, true, false);
+                              el.dispatchEvent(event);
+                            } else {
+                              el.fireEvent('on' + action);
+                            }                          
+                          function switchStyles() {
+                            var selectedOption = this.options[this.selectedIndex],
+                              className = selectedOption.value;                         
+                            document.body.className = className;
+                            localStorage.setItem("bodyClassName", className);
+                          }                          
+                          var styleSwitcher = document.getElementById("styleSwitcher");
+                          addEvent(styleSwitcher, "change", switchStyles);                          
+                          var storedClassName = localStorage.getItem("bodyClassName");
+                          if (storedClassName) {
+                            for (var i = 0; i &lt; styleSwitcher.options.length; i++) {
+                              if (styleSwitcher.options[i].value === storedClassName) {
+                                styleSwitcher.selectedIndex = i;
+                                trigger("change", styleSwitcher);
+                              }
+                            }
+                    </pre>
+                    <hr>
+                    <h3>For the box example:</h3>
+                    <pre>
+                    The HTML:
+                        &lt;button id="js-button" onclick="clickme(this, event)" 
+                        onmousemove="mousemove(this, event)" onkeyup="keypress(this, event)" 
+                        autofocus>Click Me&lt;/button>
+
+                    The CSS:
+                    #js-button { 
+                        width: 190px; 
+                        height: 190px; 
+                        background-color: blue;
+                        color: white;
+                        font-size: 16px;
+                        border: none;    
+                      }
+
+                    The JavaScript:
+                    function clickme(self, event) {
+                        self.innerHTML = "Clicked";
+                      }                      
+                      function mousemove(self, event) {
+                        self.innerHTML = event.clientX + ", "+event.clientY;
+                      }                      
+                      function keypress(self, event) {
+                        self.innerHTML = event.keyCode+" is pressed";
+                      }
+                    </pre>
+
+                </div>
                 
                 <p class="back">Back to <a href="index.html">Main</a> Page</p> 
             </main>
