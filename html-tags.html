@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>HTML Tags</title>
+        <meta name="description" content="Martha Haag CIT261 site">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/html-tags.css">
+        <link href="styles/normalize.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif|Raleway&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>        
+            <header class="header">
+                <h1>HTML Tags</h1>
+            </header>
+
+            <div class="content">
+            <nav></nav>
+
+            <main>
+                <p class="back">Back to <a href="index.html">Main</a> Page</p>
+                <h3>HTML5 Tags - Canvas, Audio, and Video</h3>
+                    <h2>Canvas Tag</h2>
+                    <p>
+                        <strong>Canvas</strong> tags can be used to draw graphics on a webpage with code (usually JavaScript). The element is a container for graphics. <br />
+                        Canvas has several methods for drawing paths, boxes, circles, text, and adding images. It can be animated, interactive, or used in website games.
+                    </p>
+                    <canvas id="canvas" width="600" height="200" style="border:3px solid"></canvas><br>
+                    <button onclick="draw(0,0)">Show Canvas</button>
+                
+                
+                    <h4>The JavaScript</h4>
+                <pre>
+                    function draw(x, y) {
+                        var canvas = document.getElementById('canvas');
+                        var ctx = canvas.getContext('2d');
+                        var ntd = canvas.getContext('2d');
+                        var btw = canvas.getContext('2d');
+                        var mtx = canvas.getContext('2d');
+                        ctx.save();
+                        ctx.clearRect(0, 0, 600, 200);
+                        ctx.fillStyle = "rgba(255,0,0,1)";
+                        ctx.fillRect(10, x, 80, 100);
+                        ctx.restore();
+                        ntd.fillStyle = "rgba(0,0,225,1)";
+                        ntd.fillRect(200, 50, 100, x);
+                        ntd.restore();
+                        btw.save();
+                        btw.fillStyle = "rgba(0,255,0,1)";
+                        btw.fillRect(275, 20, x, 75);
+                        btw.restore();
+                        mtx.beginPath();
+                        mtx.arc(500, 145, 40, 0, 2 * Math.PI);
+                        mtx.stroke();
+                        x += 2;
+                        var loopTimer = setTimeout('draw(' + x + ',' + y + ')', 30);
+                    }
+                </pre>
+
+                <hr>
+                <h4>A charming cat video</h4>
+                    <video src="images/cat.mp4" controls autoplay loop height="400"></video>
+                <h3>The Video HTML tag code:</h3>
+            </pre>
+                <h2>The &lt;Video&gt; tag</h2>
+                <pre>&lt;video src="images/cat.mpr" width="600" controls autoplay loop muted&gt;&lt;/video&gt;</pre>
+                <p>Default settings for videos when browser doesn't support video format or HTML 5.</p>
+                <pre>
+		        &lt;video controls&gt;
+		        &lt;source src="images/cat.mp4" type="video/mp4; codecs='avc1, mp4a'"&gt;
+		        &lt;source src="images/cat.webm" type="video/webm; codecs='vp8.0, vorbis'"&gt;
+		        &lt;p&gt;Browser does not support the video tag.&lt;/p&gt;
+		        &lt;/video&gt;
+            </pre>
+            <hr>
+            <h2>The Audio Tag: &lt;Audio&gt;</h2>
+            <p>HTML5 can embed audio files using src, controls, autoplay and loop attributes. This provides user options how to control audio files.</p>
+            
+            <h3>The code Sample HTML5 audio tag:</h3>
+            <pre>
+                &lt;audio controls&gt;
+                    &lt;source&gt; src="moonlight-sonata.m4a"&gt;
+                    Your browser does not support the audio element.
+                    &lt;/audio&gt;
+            </pre>
+
+            <h4>Ludwig van Beethoven - Moonlight Sonata</h4>
+            <image id="beethoven" src="images/beethoven.jpg" alt="Beethoven"></image>
+            <br />
+            <p>Moonlight Sonata</p>
+            <audio controls>
+                <source src="moonlight-sonata.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <hr>
+            <p class="back">Back to <a href="index.html">Main</a> Page</p> 
+            </main>
+           
+            <script src="scripts/html-tags.js"></script>
+        </div> <!--end content div -->
+  
+        <footer class="footer">
+                <p>&copy;2020, Martha Haag</p>
+            </footer>
+    </body>
+</html>

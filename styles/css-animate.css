@@ -10,6 +10,7 @@ div.spin {
   .spin{
     transition: height 1s, width 0.1s, background-color 1.5s;
   }
+  
   div.spin:hover {
     animation-name: spin;
     background-color: #0cb1c4;
@@ -18,6 +19,7 @@ div.spin {
     animation-timing-function: linear;
     border-radius: 5px;  
   }
+
   @keyframes spin {
       from {
           transform:rotate(0deg);
@@ -25,3 +27,4 @@ div.spin {
       to {
           transform:rotate(360deg);
       }
+    }
