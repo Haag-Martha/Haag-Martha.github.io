@@ -4,6 +4,7 @@ h1 {
 
 .content {
     background-color: transparent !Important;
+    border: 3px solid black;
 }
 
 label {
@@ -63,6 +64,10 @@ h2 {
   
   body.high-contrast h1 {
     text-shadow: none;
+  }
+
+  body.high-contrast h3 {
+      color: white;
   }
 
   body.high-contrast label {
