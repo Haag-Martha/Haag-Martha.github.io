@@ -21,7 +21,7 @@
 
             <main>
                 <p class="back">Back to <a href="index.html">Main</a> Page</p>
-                <h1>JavaScript Events Heading</h1>
+                <h2>JavaScript Events Heading</h2>
 
                     <img src="https://i.imgur.com/wYTCtRu.jpg" />
 
@@ -38,6 +38,7 @@
                         </ul>
                     </p>
                     <br>
+                <div class="select">
                     <h3>This drop down box will trigger JavaScript to change the appearance of the page</h3>
 
                     <label for="styleSwitcher">Choose a style: </label>
@@ -46,10 +47,10 @@
                         <option value="high-contrast">High Contrast</option>
                         <option value="boring">Boring</option>
                     </select>
-
+                </div>
                 <br>
                 <div class="events">
-                    <h2>Hover your mouse over the box and move it around.</h2>
+                    <h3>Hover your mouse over the box and move it around.</h3>
                     <p id="event-p">The JavaScript function "mousemove" shows the user the x,y values of the mouse location within the box.</p>
                         <button id="js-button" onclick="clickme(this, event)" onmousemove="mousemove(this, event)" onkeyup="keypress(this, event)" autofocus>Click Me</button>
                     <h3>Then try clicking in the box...the JavaScript function "clickme" gives a message "clicked" when you (the user) click inside the box.</h3>
@@ -57,7 +58,7 @@
                 </div>
                 <hr>
                 <div class="the-code">
-                    <h2>The code -</h2>
+                    <h3>The code -</h3>
                     <h3>For the Style select box:</h3>
                     <pre>
                         HTML:
