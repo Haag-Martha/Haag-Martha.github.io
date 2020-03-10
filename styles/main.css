@@ -19,8 +19,6 @@
   --nav-link: #f7f6f2;
   --nav-background: #053c55;
   --nav-hover: ;
-
-
 }
 
 html {
@@ -97,7 +95,7 @@ main {
     text-align: left;
     font-size: 24px;
     padding: 10px;
-    color: black;
+    color: blue;
 }
 
 #topics ul li a:hover {
