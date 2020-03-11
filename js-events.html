@@ -61,7 +61,8 @@
                     <h4>The code -</h4>
                     <h4>For the Style select box:</h4>
                     <pre>
-                        HTML:
+                        The HTML:
+
                         &lt;label for="styleSwitcher"&gt;Choose a style: &lt;/label>
                         &lt;select id="styleSwitcher">
                         &lt;option value="normal">Normal&lt;/option>
@@ -70,6 +71,7 @@
                         &lt;/select>
                         
                         The CSS:
+
                         label {
                             font-size: 20px;
                             font-family: Arial, Helvetica, sans-serif;  
@@ -140,6 +142,7 @@
                           }
 
                         The JavaScript:
+
                         function addEvent(obj, type, fn) {
                             if (obj.attachEvent) {
                               obj['e' + type + fn] = fn;
@@ -178,11 +181,13 @@
                     <h4>For the box example:</h4>
                     <pre>
                     The HTML:
+                    
                         &lt;button id="js-button" onclick="clickme(this, event)" 
                         onmousemove="mousemove(this, event)" onkeyup="keypress(this, event)" 
                         autofocus>Click Me&lt;/button>
 
                     The CSS:
+
                     #js-button { 
                         width: 190px; 
                         height: 190px; 
@@ -193,6 +198,7 @@
                       }
 
                     The JavaScript:
+
                     function clickme(self, event) {
                         self.innerHTML = "Clicked";
                       }                      
