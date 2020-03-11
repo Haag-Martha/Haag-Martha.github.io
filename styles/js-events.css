@@ -19,6 +19,11 @@ h3 {
     font-size: 32px;
 }
 
+h4 {
+  font-size: 32px;
+  color: black;
+}
+
 /* Normal styles */
 h2 {
     text-shadow: -.8px -.8px 0 #00070c,
