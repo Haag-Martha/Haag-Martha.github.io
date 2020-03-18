@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto|Ubuntu&display=swap');
+
+
+
+html {
+  background-color: #e2dcc5;
+}
+body {
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #9caea9;
+  padding: 1em;
+}
+.site-img img {
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.wireframe img {
+  width: 80%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: black;
+  text-shadow:
+  		-.5px -.5px 0 #6f6866,
+		.5px -.5px 0 #6f6866,
+		-.5px .5px 0 #6f6866,
+		.5px .5px 0 #6f6866;
+}
+header {
+  padding: 1em;
+  text-align: center;
+  color: whitesmoke;
+  background-color: #6f6866;
+}
+header > h1, header > h2 {
+  color: whitesmoke;
+}
+
+p {
+  font-family: "Ubuntu", Helvetica, sans-serif;
+  color: black;
+  	text-shadow:
+		-.5px -.5px 0 #6f6866,
+		.5px -.5px 0 #6f6866,
+		-.5px .5px 0 #6f6866,
+		.5px .5px 0 #6f6866;
+  padding: 1em;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: .5px;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+
+.primary {
+  background-color: #9caea9;
+  border: .5px solid #38302e;
+}
+.secondary {
+  background-color: #e2dcc5;
+}
+.accent1 {
+  background-color: #879696;
+}
+.accent2{
+  background-color: #6f6866;
+}
+
+.colored {
+  background-color: #6f6866;
+  color: whitesmoke;
+}
+
+p.colored {
+  background-color: #6f6866;
+  color: whitesmoke;
+}
+
+nav {
+  background-color: #879696;
+  line-height: 3em;
+  text-align: center;
+  font-size: 1.2em;
+}
+nav > ul {
+  list-style-type: none;
+  display: flex;
+
+}
+nav a {
+  padding:1em;
+  min-width: 70px;
+}
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.sitemap {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(6, 15%);
+  grid-template-rows: 3em 1.5em 1.5em 3em;
+  grid-template-areas: ". . home home . ."
+    ". . . top . ."
+    ". left left right right ."
+    "page2 page2 . . page3 page3";
+}
+.sitemap > div {
+
+  text-align: center;
+
+}
+.sm-home {
+  grid-area: home;
+  background-color: #879696;
+  line-height: 3em;
+}
+.sm-contact {
+  grid-area: page2;
+  background-color: #879696;
+  line-height: 3em;
+}
+.sm-about {
+  grid-area: page3;
+  background-color: #879696;
+  line-height: 3em;
+}
+
+.top {
+  grid-area: top;
+  border-left: 1px solid;
+}
+
+.left {
+  grid-area: left;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.right {
+  grid-area: right;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}

@@ -1,0 +1,195 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu&display=swap');
+
+html {
+  background-color: #e2dcc5;
+}
+
+body {
+  background-color: #9caea9;
+  font-family: "Ubuntu", sans-serif;
+  padding: 5px 25px;
+  margin: 0 auto;
+  color: black;
+  max-width: 960px;
+}
+
+.head {
+  background-color: #6f6866;
+  margin-top: -8px;
+  width: 100%;
+  margin-bottom: -43px;
+  border-radius: 10px 10px 0 0;
+}
+
+.logo {
+  display: block;
+  max-width: 80px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  border-radius: 25px 42px;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+}
+
+.top-nav {
+  overflow: hidden;
+  background-color: rgba(245, 245, 245, .8);
+  padding: 20px;
+}
+
+.top-nav .active {
+  text-decoration: underline;
+}
+
+.top-nav a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+  font-weight: bold;
+  float: left;
+  padding: 14px 16px;
+}
+
+.top-nav a:hover {
+  color: black;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+
+.hero {
+  background-image: url("https://cdn.glitch.com/a112c40a-fb48-4659-ac71-28b376e8531e%2Fnestled-court-2.jpg?v=1583266913379");
+  min-height: 550px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.believe {
+  position: relative;
+  color: whitesmoke;
+  text-align: center;
+  top: 350px;
+  background-color: transparent;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.intro {
+  position: absolute;
+  max-width: 80%;
+  margin-left: 8%;
+  top: 88%;
+  background-color: whitesmoke;
+  color: #6f6866;
+  padding: 20px;
+  text-shadow: -.5px -.5px .5px #403e3d;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, .8);
+}
+
+.top-push {
+  position: relative;
+  height: 150px;
+  margin: 20px;
+}
+
+.meet-the {
+  background-color: #6f6866;
+  padding: 10px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.meet-the h3 {
+  width: 250px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  font-size: 26px;
+  background-color: rgba(245, 245, 245, .9);
+  text-shadow: .5px .5px .5px #403e3d;
+  border-radius: 4px;
+}
+
+.colin {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1em;
+  margin: 20px;
+}
+
+.colin-img {
+  grid-column: 1/3;
+  grid-row: 1/6;
+  width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, .8);
+}
+
+.about-colin {
+  grid-column: 3/6;
+  background-color: rgba(245, 245, 245, .9);
+  padding: 20px;
+  font-size: 16px;
+  letter-spacing: .5px;
+  line-height: 20px;
+  color: #6f6866;
+  text-shadow: -.5px -.5px .5px black;
+  letter-spacing: 1px;
+  box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, .8);
+}
+
+.about-colin span {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.about-steve span {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.steve {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1em;
+  margin: 20px;
+  padding: 10px;
+}
+
+.steve-img {
+  grid-column: 1/3;
+  grid-row: 1/6;
+  width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, .8);
+}
+
+.about-steve {
+  grid-column: 3/6;
+  background-color: rgba(245, 245, 245, .9);
+  padding: 20px;
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: .5px;
+  line-height: 20px;
+  color: black;  
+  text-shadow: .5px .5px 1px #403e3d;
+  box-shadow: 10px 10px 15px -6px rgba(9, 9, 9, .8);
+}
