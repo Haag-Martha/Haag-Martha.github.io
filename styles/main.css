@@ -34,7 +34,8 @@ body {
 
 .header {
     background-color: var(--prussian-blue);
-    height: 200px;
+    min-height: 200px;
+    padding-bottom: 20px;
 }
 
 .header h1 {

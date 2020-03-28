@@ -28,3 +28,8 @@ span.code {
     width: 500px;
     padding: 1px 10px 10px 10px;
 }
+
+.weather {
+    background-color: #e6d5ca;
+    padding: 20px;
+}
