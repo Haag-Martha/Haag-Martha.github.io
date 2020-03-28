@@ -49,7 +49,7 @@ function setJoke(joke, error) {
             highlightButton(false);
         }
         else { /* Notice for repeat joke, do not store */
-            setButtonText("You already told that one! Try again!");
+            setButtonText("Aww Dad! You already told that one, how 'bout another?");
             highlightButton(true);
         }
     }
