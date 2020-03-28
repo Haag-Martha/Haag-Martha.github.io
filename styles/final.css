@@ -1,0 +1,115 @@
+
+#dad-joke-machine {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: #7694a2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.speech-bubble {
+    position: relative;
+    min-height: 4em;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 1em;
+    background: white;
+    color: #222222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#dad-joke-bubble:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-width: 2.6em 0 0 2.6em;
+    border-style: solid;
+    border-color: transparent;
+    border-left-color: white;
+    margin-right: -2.55em;
+    margin-top: -1.3em;
+}
+/* CSS Transitions */
+#new-joke-bubble{
+    transition: background-color 0.3s ease-in-out;  
+}
+#new-joke-bubble:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-width: 0 2.6em 2.6em 0;
+    border-style: solid;
+    border-color: transparent;
+    border-right-color: white;
+    /* CSS Transitions */
+    transition: border-right-color 0.3s ease-in-out;  
+    margin-left: -2.55em;
+    margin-top: -1.3em;
+}
+#new-joke-bubble.red:after {
+    border-right-color: #ffaaaa;
+}
+
+/* Button */
+/* CSS transforms and CSS Animations */
+@keyframes button-wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+    94% {
+        transform: rotate(0deg);
+    }
+    96% {
+        transform: rotate(-5deg);
+    }
+    98% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+#new-joke-bubble #new-joke-button {
+    padding: 0.5em;
+    border-radius: 0.7em;
+    font: inherit;
+    /* CSS Animations */
+    animation: button-wobble 7s ease-in-out 0s infinite normal both;  
+}
+
+#new-joke-button {
+    border: 1px solid #7694a2;
+    box-shadow: 2px 2px #486a81;
+}
+
+#new-joke-button:hover {
+    cursor: pointer;
+    background-color: white;
+}
+
+#new-joke-button:active {
+    background-color: #6291b0;
+    color: white;
+}
+
+.the-code {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#final-code {
+    color: rgb(5, 29, 252);
+}
+
+img {
+    max-width: 95%;
+    align-content: center;
+}
